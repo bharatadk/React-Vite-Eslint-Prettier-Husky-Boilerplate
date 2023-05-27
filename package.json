@@ -21,7 +21,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,html,css,json,scss}": "prettier --write",
-    "src/**/*.{js,jsx}": "eslint src --ext js,jsx --report-unused-disable-directives --fix"
+    "src/**/*.{js,jsx}": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 5 --fix"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
