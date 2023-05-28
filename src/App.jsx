@@ -1,14 +1,18 @@
-import './App.css';
 import { useState } from 'react';
+
+import './App.css';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 
 function App() {
     const [count, setCount] = useState(0);
-    const { NODE_ENV } = process.env;
 
+    // const { NODE_ENV } = process.env;
+    const myFile = process.env.NODE_ENV;
     console.log('ram');
     console.log('ram2');
+    console.log(myFile);
+
     console.log('ram3');
     console.log('ram4');
     console.log('ram5');
@@ -26,10 +30,7 @@ function App() {
                 </a>
             </div>
             <div>
-                {' '}
-                <h2>
-                    mode : <span style={{ color: 'green' }}>{NODE_ENV}</span>
-                </h2>
+                <h2>{/* mode : <span style={{ color: 'green' }}>{NODE_ENV}</span> */}</h2>
             </div>
             <h1>React + Vite + Eslint + Prettier + Husky </h1>
             <div className="card">
